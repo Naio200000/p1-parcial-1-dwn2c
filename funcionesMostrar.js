@@ -1,3 +1,11 @@
+/*
+Declaracion de Variables
+*/
+
+let listaDiscos = document.getElementById('disc-list_tabla');
+let listaPistas = document.getElementById('info_pistas-tabla');
+
+
 /**
  * Lista los discos que ya fueron ingresados con su nombre, autor y codigo
  * llama a la funcion que genera el boton para buscar un disco en particular

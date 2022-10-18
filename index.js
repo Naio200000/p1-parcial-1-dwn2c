@@ -8,8 +8,7 @@
 let discos = [];
 let codigos = [];
 let pistas = [];
-let listaDiscos = document.getElementById('disc-list_tabla');
-let listaPistas = document.getElementById('info_pistas-tabla')
+
 
 // Función Cargar:
 /**

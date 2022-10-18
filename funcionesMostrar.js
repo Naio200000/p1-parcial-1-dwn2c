@@ -83,8 +83,8 @@ function buscarDisco(numero) {
  */
 function calcularDuracion (array){
     let total = 0;
-    for (i = 0; i < array.length; i++) {
-        total += array[i].Duracion;
+    for (j = 0; j < array.length; j++) {
+        total += array[j].Duracion;
     }
     return total
 }/**

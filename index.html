@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Programación I | Parcial 1 | Alsinet, Nicolas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="main.css" />
+        <script src="index.js"></script>
+        <script src="funcionesCarga.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Programación I | Parcial 1 | Alsinet, Nicolas</h1>
+        </header>
+        <main>
+            <h2>Mis discos</h2>
+            <div class="botonera-lista">
+                <div class="botonera">
+                    <button class="boton" onclick="Cargar();">Cargar nuevo disco</button>
+                    <button class="boton" onclick="Buscar();">Buscar disco</button>
+                </div>
+                <div class="disc-list" id="disc-list">
+                    <h3>Lista de Discos</h3>
+                    <p>Total</p>
+                    <p id="total-disc"></p>
+                    <p>Promedio Duracion por disco</p>
+                    <p id="total-disc_promedio"></p>
+                    <table id="disc-list_tabla" class="disc-list_tabla button">
+                    </table>
+                </div>
+            </div>
+            <div class="info" id="info">
+                <div class="info_disco">
+                    <h3 id="info_disco-nombre"></h3>
+                    <h3 id="info_disco-autor"></h3>
+                    <p>Codigo</p>
+                    <p id="info_disco-codigo"></p>
+                    <P>Pistas</P>
+                    <p id="info_disco-pistas"></p>
+                    <p>Duración</p>
+                    <p id="info_disco-duracion"></p>
+                </div>
+                <div class="info_pistas">
+                    <table class="info_pistas-tabla" id="info_pistas-tabla">
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor Fabrizio Carlassara</li>
+                <li>
+                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1 </li>
+            </ul>
+        </footer>
+    </body>
+    <script src="funcionesMostrar.js"></script>
+</html>

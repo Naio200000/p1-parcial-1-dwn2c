@@ -1,0 +1,214 @@
+/*
+Imports and links
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/*
+Estilos generales
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: #D0E0E3;
+}
+header, 
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #134F5C;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: calc(100vh - 174px);
+}
+/*
+Encabezado
+*/
+
+h1 {
+    padding: .5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/*
+Main
+*/
+main {
+    background-color: #fff;
+}
+h2 {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2em;
+    color: #134F5C;
+}
+.botonera-lista {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;
+    
+}
+/*
+Botones
+*/
+.botonera {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+}
+
+.boton {
+    margin: .5em 0;
+    padding: .25em .5em;
+    max-width: 350px;
+    border: none;
+    border-radius: .5em;
+    background: #134F5C;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: center;
+    color: #D0E0E3;
+
+}
+table .boton {
+    margin: 0;
+    padding: 0.25em;
+    max-width: auto;
+    border-radius: .5em;
+    background: #D0E0E3;
+    cursor: pointer;
+    font-size: inherit;
+    color: #134F5C;
+}
+/*
+Lista
+*/
+.disc-list {
+    padding: .5rem 1rem;
+    border-radius: .5em;
+    background: #134F5C;
+    overflow-y: auto;
+    max-height: 40vh;
+    flex: 1 1 55%;
+}
+.disc-list h3,
+.disc-list p  {
+    margin: .5em;
+    display: inline-block;
+    width: calc(33% - 2rem);
+    text-align: right;
+}
+#total-disc, #total-disc + p {
+    text-align: left;
+}
+.disc-list_tabla {
+    width: 100%;
+    text-align: center;
+}
+.disc-list_tabla th,
+.disc-list_tabla td {
+    line-height: 1.5;
+}
+.disc-list_tabla  td {
+    cursor: pointer;
+}
+.rojo {
+    color: red;
+}
+.mayorDuracion::after {
+    content: '^';
+}
+/*
+Disco Seleccionado
+*/
+.info {
+    
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.info_disco,
+.info_pistas {
+    background: #134F5C;
+    flex: 1 1 100%;
+    padding: 1rem 2rem;
+    overflow-y: auto;
+    max-height: 17vh;
+    flex: 1 1 55%;
+}
+.info_disco {
+    border-radius: .5em 0 0 .5em;
+}
+.info_pistas {
+    border-radius: 0 .5em .5em 0;
+}
+.info_disco > * {
+    display: inline-block;
+    padding: .25em 1rem;
+    width: calc(50% - 1rem);
+}
+#info_disco-nombre {
+    font-size: 1.5rem;
+}
+.info_disco > :first-child {
+    font-size: 2rem;
+}
+.info_pistas table{
+    width: 100%;
+    text-align: center;
+}
+.info_disco > div {
+    display: flex;
+    gap: .5em;
+}
+#info_disco-duracion + p {
+    min-width: fit-content;
+}
+.info_pistas-tabla th,
+.info_pistas-tabla td {
+    line-height: 1.5;
+}
+
+/*
+Footer
+*/
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    list-style: none;
+}
+
+footer a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #D0E0E3;
+}
+
+/*
+Hovers
+*/
+footer a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+}

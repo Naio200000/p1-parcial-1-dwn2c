@@ -67,13 +67,14 @@ function generaBoton(dato) {
  * Se ingresa un codigo de un boton y lo muestra
  */
 function buscarDisco(numero) {
+    document.getElementById('info_disco-nombre').innerHTML = 'No se encontró disco con ese código';
     for (i = 0; i < discos.length; i++) {
         if (discos[i].Codigo == numero) {
             mostrarDisco(discos[i]);
             break
         }
     }
-    document.getElementById('info_disco-nombre').innerHTML = 'No se encontró disco con ese código';
+    
 }
 /**
  * Se ingresa el array de las mistas y se calcula suma la duracion de cada pista
